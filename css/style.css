@@ -69,7 +69,7 @@ a { color: var(--maroon); }
 /* Hero */
 .hero {
   position: relative;
-  min-height: min(72vh, 640px);
+  min-height: min(48vh, 420px);
   display: grid;
   place-items: center;
   text-align: center;
@@ -82,7 +82,7 @@ a { color: var(--maroon); }
   inset: 0;
   background: linear-gradient(180deg, rgba(20,51,29,.55), rgba(20,51,29,.8));
 }
-.hero-inner { position: relative; padding: 64px 16px; max-width: 760px; }
+.hero-inner { position: relative; padding: 40px 16px; max-width: 760px; }
 .hero h1 { font-family: var(--display); font-weight: 700; font-size: clamp(2.2rem, 6vw, 3.8rem); margin: 0 0 8px; line-height: 1.15; }
 .hero p { font-family: var(--serif); font-size: clamp(1.2rem, 2.6vw, 1.6rem); margin: 0 0 28px; color: var(--gold-soft); }
 .btn {
