@@ -3,13 +3,15 @@
   --kumkum-deep: #5e1010;
   --gold: #c8962e;
   --turmeric: #e8b931;
-  --jasmine: #fdf8f0;
-  --sand: #f5ead6;
+  --jasmine: #f1e6cf;
+  --sand: #e6d3ad;
+  --ivory: #f9f2e3;
+  --grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .35 0 0 0 0 .24 0 0 0 0 .12 0 0 0 .07 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
   --leaf: #1f4d2b;
   --leaf-deep: #14331d;
   --ink: #2b1810;
-  --muted: #6e5a4a;
-  --line: #e6d5b5;
+  --muted: #5c4838;
+  --line: #d9c49b;
   --display: "Cormorant Garamond", Georgia, serif;
   --body: "Mukta", system-ui, sans-serif;
   --radius: 14px;
@@ -20,7 +22,7 @@
 html { scroll-behavior: smooth; scroll-padding-top: 76px; }
 body {
   margin: 0;
-  background: var(--jasmine);
+  background: var(--grain), radial-gradient(ellipse at center, transparent 55%, rgba(120,80,30,.10) 100%) fixed, var(--jasmine);
   color: var(--ink);
   font-family: var(--body);
   font-size: 18px;
@@ -78,7 +80,7 @@ section { padding: 96px 0; }
   position: sticky;
   top: 0;
   z-index: 20;
-  background: rgba(253,248,240,.94);
+  background: rgba(241,230,207,.94);
   backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--line);
 }
@@ -122,7 +124,7 @@ section { padding: 96px 0; }
   border-radius: var(--arch);
   overflow: hidden;
   aspect-ratio: 4 / 5;
-  border: 8px solid #fff;
+  border: 8px solid var(--ivory);
   box-shadow: 0 30px 60px rgba(94,16,16,.22);
 }
 .hero-art .arch img { width: 100%; height: 100%; object-fit: cover; object-position: center 20%; }
@@ -171,15 +173,15 @@ section { padding: 96px 0; }
 .word dt { font-family: var(--display); font-size: 1.8rem; font-weight: 700; color: var(--kumkum); }
 .word dd { margin: 0; color: var(--muted); }
 .pillars { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 32px; }
-.pillar { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 18px; text-align: center; }
+.pillar { background: var(--ivory); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px; text-align: center; }
 .pillar b { display: block; font-family: var(--display); font-size: 1.3rem; color: var(--leaf); }
 .pillar span { font-size: .9rem; color: var(--muted); }
 
 /* Classes */
-.classes { background: var(--sand); }
+.classes { background: var(--grain), var(--sand); }
 .class-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
 .class-card {
-  background: #fff;
+  background: var(--ivory);
   border-radius: var(--radius);
   overflow: hidden;
   display: flex;
@@ -201,7 +203,7 @@ section { padding: 96px 0; }
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 16px;
-  background: #fff;
+  background: var(--ivory);
   border-radius: var(--radius);
   padding: 24px;
   border: 1px solid var(--line);
@@ -237,7 +239,7 @@ section { padding: 96px 0; }
   position: relative;
 }
 .step h3 { font-size: 1.7rem; color: var(--kumkum-deep); margin-bottom: 12px; }
-.step ul { text-align: left; background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 20px 20px 20px 40px; margin: 0; font-size: .98rem; }
+.step ul { text-align: left; background: var(--ivory); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px 20px 20px 40px; margin: 0; font-size: .98rem; }
 .step li { margin-bottom: 6px; }
 
 /* Teacher */
@@ -312,9 +314,9 @@ section { padding: 96px 0; }
 .lb-count { position: absolute; bottom: 16px; left: 0; right: 0; text-align: center; color: #ccc; font-size: .9rem; }
 
 /* About the art */
-.art { background: var(--sand); }
+.art { background: var(--grain), var(--sand); }
 .art-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
-.art-card { background: #fff; border-radius: var(--radius); padding: 32px 28px; border: 1px solid var(--line); text-align: center; }
+.art-card { background: var(--ivory); border-radius: var(--radius); padding: 32px 28px; border: 1px solid var(--line); text-align: center; }
 .art-card .glyph { font-family: var(--display); font-size: 3rem; color: var(--gold); line-height: 1; margin-bottom: 8px; }
 .art-card h3 { font-size: 1.7rem; color: var(--kumkum-deep); margin-bottom: 8px; }
 .art-card p { margin: 0; color: var(--muted); }
