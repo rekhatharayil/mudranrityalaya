@@ -108,7 +108,7 @@ Then add a link to the gallery page(s):
 - Organization: [`rekhatharayil`](https://github.com/rekhatharayil) (free plan). It's kept separate from personal accounts so the school's site can be shared with other maintainers without giving access to anything else.
 - Repo: `rekhatharayil/mudranrityalaya`, **public** (free GitHub Pages requires a public repo; it contains only the website, with no secrets or keys).
 - Settings → Pages: source `main` / root, custom domain `www.mudranrityalaya.com`, **Enforce HTTPS: on**.
-- The domain `mudranrityalaya.com` is **verified** for the organization (Org Settings → Pages), which prevents anyone else from claiming it on GitHub.
+- The domain `mudranrityalaya.com` should be **verified** for the organization (Org Settings → Pages → Verified & approved domains; the TXT record below is in place). Verification prevents anyone else from claiming the domain on GitHub. If it shows "Unverified", click **Verify**.
 - Commits use the GitHub noreply email so personal email addresses don't appear in the public history.
 
 ### Namecheap
@@ -145,7 +145,7 @@ The site previously ran on Namecheap hosting (website builder), and its SSL cert
 2. Rebuilt the site as static HTML/CSS with the same URLs; fixed small typos ("Nritylaya" → "Nrityalaya", etc.).
 3. Created the `rekhatharayil` GitHub organization and this repo; enabled Pages with the custom domain.
 4. Switched Namecheap nameservers from the hosting plan's DNS to BasicDNS and added the GitHub records; removed the old URL redirect record.
-5. Verified the domain with GitHub; the free certificate was issued and HTTPS enforced once DNS caches cleared (about 3 hours).
+5. Added the GitHub domain-verification TXT record; the free certificate was issued and HTTPS enforced once DNS caches cleared (about 3 hours).
 6. Added the contact email, fixed the portrait's aspect ratio, shortened the home hero banner, set the copyright to "2023–present".
 7. Built and published the v2 redesign at `/v2/`.
 
