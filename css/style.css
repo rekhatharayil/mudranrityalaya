@@ -74,7 +74,7 @@ a { color: var(--maroon); }
   place-items: center;
   text-align: center;
   color: #fff;
-  background: var(--green-deep) url("../images/gallery/14.jpg") center 35% / cover no-repeat;
+  background: var(--green-deep) url("../images/hero.jpg") center 100% / cover no-repeat;
 }
 .hero::before {
   content: "";
